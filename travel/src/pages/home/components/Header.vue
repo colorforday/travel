@@ -20,7 +20,7 @@
 </script>
 
 <style lang="stylus" scoped>
-  @import '~@/assets/css/varibles.styl'
+  @import '~styles/varibles.styl'
   .header {
     display: flex;
     height: 0.86rem;
@@ -34,14 +34,6 @@
       .back-icon {
         font-size: .4rem;
       }
-      .header-right {
-        width: 1.24rem;
-        float: right;
-        text-align: center;
-        .arrow-icon {
-          font-size: .24rem;
-        }
-      }
     }
     .header-input {
       flex: 1;
@@ -49,10 +41,19 @@
       line-height: .64rem;
       margin-top: .1rem;
       margin-right: .2rem;
-      background: #fff;
+      background: $white;
       border-radius: .1rem;
       color: #ccc;
       padding: 0 .2rem;
+    }
+    .header-right {
+      /*width: 1.24rem;*/
+      float: right;
+      text-align: center;
+      .arrow-icon {
+        font-size: .24rem;
+        margin-right: .2rem;
+      }
     }
   }
 
